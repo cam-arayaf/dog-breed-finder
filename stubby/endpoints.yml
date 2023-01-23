@@ -1,0 +1,23 @@
+- request:
+    url: /breeds/([a-zA-Z0-9/]+)/dog-image.jpg
+    method: GET
+  response:
+    latency: 1000
+    status: 200
+    file: ./responses/dog-image.jpg
+
+- request:
+    url: /api/breed/([a-zA-Z0-9/]+)/images
+    method: GET
+  response:
+    latency: 1000
+    status: 200
+    file: ./responses/get-breed-images.json
+
+- request:
+    url: /api/breeds/list/all
+    method: GET
+  response:
+    latency: 1000
+    status: 200
+    file: ./responses/get-breed-names.json
